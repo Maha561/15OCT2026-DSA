@@ -1,0 +1,84 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner k = new Scanner(System.in);
+
+        System.out.println("enter a size of an array ");
+
+        int size = k.nextInt();
+
+        int[] arr = new int[size];
+
+        for(int i=0;i<arr.length;i++){
+
+            System.out.println("enter a number");
+
+            arr[i] =k.nextInt();
+
+        }
+
+
+        System.out.println(" finding the smallest element in an array ");
+
+       int smallest = arr[0];
+
+       for(int i=1;i<arr.length;i++){
+
+           if(arr[i]<smallest){
+
+               smallest = arr[i];
+           }
+       }
+
+        System.out.println(" the smallest element is "+smallest);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
+C:\Users\HP\.jdks\openjdk-23.0.2\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.3.3\lib\idea_rt.jar=63694:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.3.3\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\HP\Downloads\helloworld2\untitled22\out\production\untitled22 Main
+enter a size of an array 
+3
+enter a number
+123
+enter a number
+23
+enter a number
+34
+ finding the smallest element in an array 
+ the smallest element is 23
+
+Process finished with exit code 0
+
